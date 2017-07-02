@@ -1,2 +1,2 @@
-# sborka.loc
-#this is my stream build system
+# gulp-bundle.loc
+#this is my gulp build system
