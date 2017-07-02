@@ -1,0 +1,17 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="171.2" height="185" viewBox="0 0 171.2 185">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #39b54a;
+        stroke: #231f20;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <title>set</title>
+  <g>
+    <path class="cls-1" d="M87.4,110.2a52.9,52.9,0,1,1-52.9,52.9A52.9,52.9,0,0,1,87.4,110.2Z" transform="translate(-34 -31.4)"/>
+    <polygon class="cls-1" points="170.6 0.8 151.5 107.6 68.5 37.7 170.6 0.8"/>
+  </g>
+</svg>

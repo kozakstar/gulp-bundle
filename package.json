@@ -1,0 +1,59 @@
+{
+  "name": "bundle.loc",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0",
+    "photoswipe": "^4.1.1",
+    "svg4everybody": "^2.1.8",
+    "validate": "git+https://github.com/cferdinandi/validate.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.5.1",
+    "browser-sync": "^2.18.5",
+    "css-mqpacker": "^6.0.1",
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-cached": "^1.1.0",
+    "gulp-debug": "^3.0.0",
+    "gulp-file-include": "^1.1.0",
+    "gulp-flatten": "^0.3.1",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-newer": "^1.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-remember": "^0.3.1",
+    "gulp-smushit": "^1.2.0",
+    "gulp-sourcemaps": "latest",
+    "gulp-svg-symbols": "^2.0.0",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "main-bower-files": "^2.13.1",
+    "postcss-apply": "^0.8.0",
+    "postcss-csso": "^2.0.0",
+    "postcss-custom-properties": "^6.1.0",
+    "postcss-import": "^10.0.0",
+    "postcss-nested": "^2.0.2",
+    "postcss-nesting": "^4.0.1",
+    "webpack": "^3.0.0",
+    "webpack-stream": "^3.2.0"
+  },
+  "scripts": {
+    "buildjs": "webpack"
+  }
+}
