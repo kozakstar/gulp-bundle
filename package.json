@@ -9,49 +9,54 @@
   "babel": {
     "presets": [
       "env"
+    ],
+    "plugins": [
+      "transform-es2015-modules-commonjs"
     ]
   },
   "dependencies": {
     "jquery": "^3.2.1",
     "normalize.css": "^7.0.0",
-    "photoswipe": "^4.1.1",
-    "svg4everybody": "^2.1.8",
+    "photoswipe": "^4.1.2",
+    "svg4everybody": "^2.1.9",
     "validate": "git+https://github.com/cferdinandi/validate.git"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.1",
+    "autoprefixer": "^7.1.2",
+    "babel": "^6.23.0",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
-    "babel-preset-env": "^1.5.1",
-    "browser-sync": "^2.18.5",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "browser-sync": "^2.18.13",
     "css-mqpacker": "^6.0.1",
     "del": "^3.0.0",
     "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-babel": "^6.1.2",
-    "gulp-cached": "^1.1.0",
-    "gulp-debug": "^3.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-debug": "^3.1.0",
     "gulp-file-include": "^1.1.0",
     "gulp-flatten": "^0.3.1",
-    "gulp-if": "^2.0.1",
-    "gulp-imagemin": "^3.0.3",
-    "gulp-newer": "^1.2.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-newer": "^1.3.0",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^7.0.0",
     "gulp-remember": "^0.3.1",
     "gulp-smushit": "^1.2.0",
-    "gulp-sourcemaps": "latest",
-    "gulp-svg-symbols": "^2.0.0",
-    "gulp-svgmin": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-svg-symbols": "^2.0.2",
+    "gulp-svgmin": "^1.2.4",
     "gulp-uglify": "^3.0.0",
     "main-bower-files": "^2.13.1",
     "postcss-apply": "^0.8.0",
     "postcss-csso": "^2.0.0",
     "postcss-custom-properties": "^6.1.0",
     "postcss-import": "^10.0.0",
-    "postcss-nested": "^2.0.2",
+    "postcss-nested": "^2.1.0",
     "postcss-nesting": "^4.0.1",
-    "webpack": "^3.0.0",
-    "webpack-stream": "^3.2.0"
+    "webpack": "^3.5.1",
+    "webpack-stream": "^4.0.0"
   },
   "scripts": {
     "buildjs": "webpack"
