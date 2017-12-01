@@ -1,5 +1,5 @@
 'use strict'
-const projectName = 'bandle.loc'
+const projectName = 'test.loc'
 /****************************************************************************************************/
 //MODULES REQUIRE
 /****************************************************************************************************/
@@ -34,6 +34,7 @@ import webpack from 'webpack'
 import gulpwebpack from 'webpack-stream'
 import plumber from 'gulp-plumber'
 import fileinclude from 'gulp-file-include'
+
 const browserSync = create()
 /****************************************************************************************************/
 //DEV OR PRODUCTION
@@ -201,6 +202,14 @@ gulp.task('svg:icons', () => {
 //DEL build directory
 /****************************************************************************************************/
 gulp.task('clean', () => del('build'))
+
+/****************************************************************************************************/
+//Copy favicon
+/****************************************************************************************************/
+gulp.task('favicon', () => {
+  return gulp.src('src/favicon.ico')
+    .pipe(gulpIf(!isDevelopment, gulp.dest(cms.modx.html), gulp.symlink(cms.modx.html)))
+})
 /****************************************************************************************************/
 //WATCHERS
 /****************************************************************************************************/
@@ -221,7 +230,7 @@ gulp.task('watch', () => {
     let destFilePath = path.resolve(cms.modx.img, filePathFromSrc)
     del.sync(destFilePath)
   })
-  gulp.watch(['src/img/svg/*.svg','src/img/svg/icons/*.svg'], gulp.series('svg')).on('unlink', function (filepath) {
+  gulp.watch(['src/img/svg/*.svg', 'src/img/svg/icons/*.svg'], gulp.series('svg')).on('unlink', function (filepath) {
     let filePathFromSrc = path.relative(path.resolve('src/'), filepath)
     let destFilePath = path.resolve(cms.modx.img, filePathFromSrc)
     del.sync(destFilePath)
@@ -249,5 +258,5 @@ gulp.task('serve', () => {
 /****************************************************************************************************/
 //GLOBAL TASKS
 /****************************************************************************************************/
-gulp.task('build', gulp.series(gulp.parallel('html', 'css', 'js', 'libs', 'mylibs', 'fonts', 'img', 'svg:icons'), 'svg'))
+gulp.task('build', gulp.series(gulp.parallel('html', 'css', 'js', 'libs', 'mylibs', 'favicon', 'fonts', 'img', 'svg:icons'), 'svg'))
 gulp.task('dev', gulp.series('build', gulp.parallel('watch', 'serve')))
